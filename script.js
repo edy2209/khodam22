@@ -8,14 +8,14 @@ document.getElementById('khodamForm').addEventListener('submit', function(event)
 });
 
 const khodams = [
-    {name: 'Khodam Jin', image: 'assets/jin.jpeg', description: 'Khodam yang berasal dari bangsa Jin.'},
-    {name: 'Khodam Malaikat', image: 'assets/malaikat.jpeg', description: 'Khodam yang berasal dari malaikat.'},
-    {name: 'Khodam Raja Macan', image: 'assets/macan.jpeg', description: 'Khodam yang berbentuk macan raja.'},
-    {name: 'Khodam Harimau Putih', image: 'assets/harimauputih.jpeg', description: 'Khodam yang berbentuk harimau putih.'},
-    {name: 'Khodam Buaya Putih', image: 'assets/buaya.jpeg', description: 'Khodam yang berbentuk buaya putih.'},
-    {name: 'Khodam Ular Naga', image: 'assets/ularnaga.jpg', description: 'Khodam yang berbentuk ular naga.'},
-    {name: 'Khodam Nyi Roro Kidul', image: 'assets/roro.jpeg', description: 'Khodam yang berkaitan dengan legenda Nyi Roro Kidul.'},
-    {name: 'Khodam Dewa Zeus', image: 'assets/zeus.jpeg', description: 'Khodam yang berkaitan dengan dewa Zeus.'}
+    {name: 'Khodam Jin', image: 'assets/jin.jpeg', description: 'perilakunya kek Jin.'},
+    {name: 'Khodam Malaikat', image: 'assets/malaikat.jpeg', description: 'terkenal baik dan penyabar.rajin menabung'},
+    {name: 'Khodam Raja Macan', image: 'assets/macan.jpeg', description: 'terkenal galak padahal hati hello kity.'},
+    {name: 'Khodam Harimau Putih', image: 'assets/harimauputih.jpeg', description: 'galak tapi ngangenin'},
+    {name: 'Khodam Buaya Putih', image: 'assets/buaya.jpeg', description: 'terkenal buaya darat,tapi maen cantik'},
+    {name: 'Khodam Ular Naga', image: 'assets/ularnaga.jpg', description: 'omonganya gak berbisa dan gak bisa di percaya'},
+    {name: 'Khodam Nyi Roro Kidul', image: 'assets/roro.jpeg', description: 'anggun tapi gak bisa di anggap remeh.'},
+    {name: 'Khodam Dewa Zeus', image: 'assets/zeus.jpeg', description: 'adil dan bijaksana laksana dewa'}
 ];
 
 // Function to hash the name and map it to an index
