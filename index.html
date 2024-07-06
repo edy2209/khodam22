@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Khodam</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f0f0f0; /* Warna latar belakang halaman keseluruhan */
+            color: #000; /* Warna teks default */
+            font-family: Arial, sans-serif; /* Font default */
+        }
+        .container {
+            background-color: #000; /* Warna latar belakang hitam untuk container */
+            color: #fff; /* Warna teks putih untuk container */
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px; /* Tambahkan sudut membulat untuk container */
+            max-width: 800px; /* Maksimal lebar container */
+            margin: 20px auto; /* Tengah-kan container */
+        }
+        .profile-image {
+            width: 150px; /* Lebar gambar */
+            height: 150px; /* Tinggi gambar */
+            display: block;
+            margin: 0 auto 20px; /* Tengah-kan gambar dan beri jarak bawah */
+            border-radius: 50%; /* Membuat gambar berbentuk bulat sempurna */
+            object-fit: cover; /* Memastikan gambar memenuhi kontainer */
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.8em; /* Ukuran font heading */
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border: 2px solid #fff; /* Garis input putih */
+            border-radius: 5px;
+            width: 80%;
+            max-width: 400px;
+            background-color: #333; /* Warna latar belakang input gelap */
+            color: #fff; /* Warna teks input putih */
+        }
+        input[type="text"]::placeholder {
+            color: #ccc; /* Warna placeholder lebih terang */
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff5733; /* Warna latar belakang tombol terang */
+            color: #fff; /* Warna teks tombol putih */
+            cursor: pointer;
+            font-size: 1em; /* Ukuran font tombol */
+        }
+        button:hover {
+            background-color: #ff704d; /* Warna latar belakang tombol saat di-hover */
+        }
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            table-layout: fixed; /* Membuat lebar kolom tetap */
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #fff;
+            word-wrap: break-word; /* Membuat kata yang panjang dapat dipotong */
+        }
+        th {
+            background-color: #333; /* Warna latar belakang header tabel */
+        }
+        tr:nth-child(even) {
+            background-color: #444; /* Warna latar belakang baris genap tabel */
+        }
+        tr:nth-child(odd) {
+            background-color: #555; /* Warna latar belakang baris ganjil tabel */
+        }
+        img.khodam-image {
+            width: 100%; /* Lebar gambar 100% dari kolom */
+            max-width: 150px; /* Lebar maksimal gambar */
+            height: auto; /* Tinggi otomatis sesuai proporsi */
+            display: block;
+            margin: 0 auto; /* Tengah-kan gambar */
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            .profile-image {
+                width: 100px; /* Lebar gambar */
+                height: 100px; /* Tinggi gambar */
+            }
+            h1 {
+                font-size: 1.5em; /* Ukuran font heading */
+            }
+            input[type="text"] {
+                width: 90%; /* Lebar input pada tampilan mobile */
+                max-width: none;
+                font-size: 0.9em; /* Ukuran font input pada tampilan mobile */
+            }
+            button {
+                width: 100%;
+                padding: 10px;
+                font-size: 0.9em; /* Ukuran font tombol pada tampilan mobile */
+            }
+            table {
+                width: 100%; /* Lebar tabel pada tampilan mobile */
+                font-size: 0.9em; /* Ukuran font tabel pada tampilan mobile */
+            }
+            th, td {
+                padding: 5px; /* Padding lebih kecil untuk tampilan mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Khodam Putri Rere🥀</h1>
+        <!-- Tambahkan elemen gambar di sini -->
+        <img src="assets/rere.png" alt="Header Image" class="profile-image">
+
+        <h1>Cek Khodam</h1>
+        <form id="khodamForm">
+            <input type="text" id="nameInput" placeholder="Masukkan Nama">
+            <button type="submit">Cek Khodam</button>
+        </form>
+        <table id="khodamTable">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Gambar Khodam</th>
+                    <th>Nama Khodam</th>
+                    <th>Deskripsi Khodam</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Rows will be added here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
